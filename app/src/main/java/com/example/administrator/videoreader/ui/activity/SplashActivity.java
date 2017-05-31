@@ -1,4 +1,4 @@
-package com.example.administrator.videoreader.ui;
+package com.example.administrator.videoreader.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +10,6 @@ import android.widget.ImageView;
 
 import com.example.administrator.videoreader.R;
 import com.example.administrator.videoreader.ui.base.BaseActivity;
-import com.example.administrator.videoreader.utils.ViewUtils;
-import com.squareup.picasso.Picasso;
-
-import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
