@@ -22,7 +22,7 @@ import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.example.administrator.videoreader.R;
 import com.example.administrator.videoreader.rxbus.RxBus;
 import com.example.administrator.videoreader.rxbus.RxConstants;
-import com.example.administrator.videoreader.ui.base.BaseActivity;
+import com.example.administrator.videoreader.base.BaseActivity;
 import com.example.administrator.videoreader.ui.fragment.NewsMainFragment;
 import com.example.administrator.videoreader.ui.fragment.VideoHomeFragment;
 import com.example.administrator.videoreader.ui.fragment.ZhihuDailyFragment;

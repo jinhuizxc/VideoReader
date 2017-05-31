@@ -39,6 +39,14 @@
             android:name=".ui.activity.ChoosePhotoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentFullScreenTheme"/>
+        <activity
+            android:name=".ui.activity.TypedVideosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentFullScreenTheme"/>
+        <activity
+            android:name=".ui.activity.VideoInfoActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentFullScreenTheme"/>
     </application>
 
 </manifest>

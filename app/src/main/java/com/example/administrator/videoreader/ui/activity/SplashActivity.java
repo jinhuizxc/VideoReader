@@ -9,7 +9,7 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 
 import com.example.administrator.videoreader.R;
-import com.example.administrator.videoreader.ui.base.BaseActivity;
+import com.example.administrator.videoreader.base.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

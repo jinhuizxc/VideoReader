@@ -2,7 +2,7 @@ package com.example.administrator.videoreader.presenter;
 
 import com.example.administrator.videoreader.api.ApiManager;
 import com.example.administrator.videoreader.bean.UserInfo;
-import com.example.administrator.videoreader.ui.base.BasePresenter;
+import com.example.administrator.videoreader.base.BasePresenter;
 import com.example.administrator.videoreader.view.AboutMeContract;
 
 import io.reactivex.Observer;

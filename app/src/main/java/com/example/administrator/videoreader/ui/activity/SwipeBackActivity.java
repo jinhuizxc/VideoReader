@@ -10,7 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 
 import com.example.administrator.videoreader.R;
-import com.example.administrator.videoreader.ui.base.BaseActivity;
+import com.example.administrator.videoreader.base.BaseActivity;
 import com.example.pandalib.SwipeBackLayout;
 
 /**

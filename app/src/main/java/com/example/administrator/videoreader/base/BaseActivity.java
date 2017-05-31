@@ -1,4 +1,4 @@
-package com.example.administrator.videoreader.ui.base;
+package com.example.administrator.videoreader.base;
 
 import android.app.AlertDialog;
 import android.content.Context;

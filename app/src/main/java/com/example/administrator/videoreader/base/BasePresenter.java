@@ -1,4 +1,4 @@
-package com.example.administrator.videoreader.ui.base;
+package com.example.administrator.videoreader.base;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;

@@ -28,7 +28,8 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
-
+    // design
+    compile 'com.android.support:design:25.3.1'
     // 集成Okhttp
     compile 'com.squareup.okhttp3:okhttp:3.4.2'
 }
