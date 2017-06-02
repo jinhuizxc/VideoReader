@@ -47,6 +47,10 @@
             android:name=".ui.activity.VideoInfoActivity"
             android:launchMode="singleTop"
             android:theme="@style/TranslucentFullScreenTheme"/>
+        <activity
+            android:name=".ui.activity.ZhihuStoryInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentFullScreenTheme"/>
     </application>
 
 </manifest>
