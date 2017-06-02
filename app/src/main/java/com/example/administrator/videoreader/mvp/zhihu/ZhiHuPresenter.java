@@ -39,9 +39,7 @@ public class ZhiHuPresenter extends BasePresenter implements ZhiHuHomeContract.P
 
     public void refreshZhihuDaily() {
         mZhiHuDailyFrag.showRefreshBar();
-        ApiManager.getInstence()
-                .getZhihuService()
-                .getLatestZhihuDaily()
+        ApiManager.getInstence().getZhihuService().getLatestZhihuDaily()
                 .map(new Function<ZhiHuDaily, ZhiHuDaily>() { //io 线程存储缓存
                     @Override
                     public ZhiHuDaily apply(ZhiHuDaily zhiHuDaily) {
@@ -79,9 +77,7 @@ public class ZhiHuPresenter extends BasePresenter implements ZhiHuHomeContract.P
     }
 
     public void loadMoreData() {
-        ApiManager.getInstence()
-                .getZhihuService()
-                .getZhihuDaily(date)
+        ApiManager.getInstence().getZhihuService().getZhihuDaily(date)
                 .map(new Function<ZhiHuDaily, ArrayList<ZhiHuStory>>() {
                     @Override
                     public ArrayList<ZhiHuStory> apply(ZhiHuDaily zhiHuDaily) {

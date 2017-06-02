@@ -17,7 +17,7 @@ import android.widget.TextView;
 import com.example.administrator.videoreader.R;
 import com.example.administrator.videoreader.bean.ZhiHuTopStory;
 import com.example.administrator.videoreader.config.Constants;
-import com.example.administrator.videoreader.ui.activity.ZhihuStoryInfoActivity;
+import com.example.administrator.videoreader.mvp.zhihu.zhihudetail.ZhihuStoryInfoActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -57,9 +57,8 @@ public class ZhihuTopPagerAdapter extends PagerAdapter {
         mTopStoryTitle.setText(mTopStories.get(position).getTitle());
         String image = mTopStories.get(position).getImage();
         if (!TextUtils.isEmpty(image)) {
-            Picasso.with(mContext)
-                    .load(image)
-                    .into(mTopStoryImg);
+            // 加载图片
+            Picasso.with(mContext).load(image).into(mTopStoryImg);
         }
         mTopStoryImg.setOnClickListener(new View.OnClickListener() {
             @Override

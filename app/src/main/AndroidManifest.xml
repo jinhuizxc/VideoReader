@@ -32,7 +32,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".ui.activity.AboutActivity"
+            android:name=".mvp.aboutme.AboutActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentFullScreenTheme"/>
         <activity
@@ -48,7 +48,7 @@
             android:launchMode="singleTop"
             android:theme="@style/TranslucentFullScreenTheme"/>
         <activity
-            android:name=".ui.activity.ZhihuStoryInfoActivity"
+            android:name=".mvp.zhihu.zhihudetail.ZhihuStoryInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentFullScreenTheme"/>
     </application>

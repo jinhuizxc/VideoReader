@@ -1,9 +1,9 @@
-package com.example.administrator.videoreader.presenter;
+package com.example.administrator.videoreader.mvp.aboutme;
 
 import com.example.administrator.videoreader.api.ApiManager;
 import com.example.administrator.videoreader.bean.UserInfo;
 import com.example.administrator.videoreader.base.BasePresenter;
-import com.example.administrator.videoreader.view.AboutMeContract;
+import com.example.administrator.videoreader.mvp.aboutme.AboutMeContract;
 
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;

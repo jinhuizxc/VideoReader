@@ -1,4 +1,4 @@
-package com.example.administrator.videoreader.presenter;
+package com.example.administrator.videoreader.mvp.movie;
 
 import com.example.administrator.videoreader.api.ApiManager;
 import com.example.administrator.videoreader.app.CustomApplication;
@@ -7,7 +7,7 @@ import com.example.administrator.videoreader.bean.movie.MovieResponse;
 import com.example.administrator.videoreader.bean.movie.RetDataBean;
 import com.example.administrator.videoreader.config.Constants;
 import com.example.administrator.videoreader.diskcache.DiskCacheManager;
-import com.example.administrator.videoreader.view.VideoHomeContract;
+import com.example.administrator.videoreader.mvp.movie.VideoHomeContract;
 
 import java.util.ArrayList;
 import java.util.List;

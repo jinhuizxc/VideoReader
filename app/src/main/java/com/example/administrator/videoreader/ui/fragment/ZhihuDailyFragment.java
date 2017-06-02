@@ -3,7 +3,6 @@ package com.example.administrator.videoreader.ui.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,7 +23,7 @@ import com.example.administrator.videoreader.mvp.zhihu.ZhiHuHomeContract;
 import com.example.administrator.videoreader.mvp.zhihu.ZhiHuPresenter;
 import com.example.administrator.videoreader.rxbus.RxBus;
 import com.example.administrator.videoreader.rxbus.RxConstants;
-import com.example.administrator.videoreader.ui.activity.ZhihuStoryInfoActivity;
+import com.example.administrator.videoreader.mvp.zhihu.zhihudetail.ZhihuStoryInfoActivity;
 import com.example.administrator.videoreader.ui.adapter.ZhihuDailyAdapter;
 import com.example.administrator.videoreader.ui.adapter.ZhihuTopPagerAdapter;
 import com.example.administrator.videoreader.utils.DateUtils;
@@ -62,13 +61,16 @@ public class ZhihuDailyFragment extends BaseFragment implements ZhiHuHomeContrac
     TextView mTvTag;
     @BindView(R.id.empty_msg)
     TextView mEmptyMsg;
+    // presenter
     private ZhiHuPresenter mPresenter = new ZhiHuPresenter(this);
     // 适配器
     private ZhihuDailyAdapter mZhihuDailyAdapter;
     private ArrayList<BaseItem> mBaseItems;
-    private AutoScrollViewPager scrollViewPager;
     private ViewGroupIndicator viewGroupIndicator;
+
     private ZhihuTopPagerAdapter mTopPagerAdapter;
+    // 顶部滚动viewpager
+    private AutoScrollViewPager scrollViewPager;
     private boolean initTag;
     private boolean loading = false;
     private Disposable mDisposable;
@@ -104,6 +106,7 @@ public class ZhihuDailyFragment extends BaseFragment implements ZhiHuHomeContrac
         mZhihudailyList.getItemAnimator().setChangeDuration(0);
         mLinearLayoutManager = new LinearLayoutManager(this.getContext());
         mZhihudailyList.setLayoutManager(mLinearLayoutManager);
+        // 滑动监听加载数据
         mZhihudailyList.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
@@ -112,6 +115,7 @@ public class ZhihuDailyFragment extends BaseFragment implements ZhiHuHomeContrac
                     mRefresh.setEnabled(true);
                 }
                 if (mZhihudailyList.loadAble()) {
+                    // 加载更多数据
                     loadMoreData();
                 }
                 if (mZhihudailyList.tagGone() && mTvTag.getVisibility() == View.VISIBLE) {
@@ -129,7 +133,9 @@ public class ZhihuDailyFragment extends BaseFragment implements ZhiHuHomeContrac
         FrameLayout headerView = (FrameLayout) mZhihudailyList.getHeaderView();
         scrollViewPager = (AutoScrollViewPager) headerView.findViewById(R.id.scroll_pager);
         viewGroupIndicator = (ViewGroupIndicator) headerView.findViewById(R.id.scroll_pager_indicator);
+        // 加载缓存
         mPresenter.loadCache();
+        // 刷新数据
         refreshData();
         mZhihudailyList.addOnTagChangeListener(this);
     }

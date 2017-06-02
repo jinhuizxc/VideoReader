@@ -60,9 +60,8 @@ public class ZhihuDailyAdapter extends BaseRecyclerAdapter {
             holder.mNewsTitle.setText(story.getTitle());
             String image = story.getImages().get(0);
             if (!TextUtils.isEmpty(image))
-                Picasso.with(mContext)
-                        .load(image) //加载第一张图
-                        .centerCrop()
+                //加载第一张图
+                Picasso.with(mContext).load(image).centerCrop()
                         .resize(image_width, image_height)
                         .into(holder.mNewsImage);
         } else if (data.getItemType() == RecyclerItemType.TYPE_TAGS) { //日期标签

@@ -1,4 +1,4 @@
-package com.example.administrator.videoreader.ui.activity;
+package com.example.administrator.videoreader.mvp.aboutme;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,8 +10,7 @@ import android.widget.TextView;
 
 import com.example.administrator.videoreader.R;
 import com.example.administrator.videoreader.bean.UserInfo;
-import com.example.administrator.videoreader.presenter.AboutMePresenter;
-import com.example.administrator.videoreader.view.AboutMeContract;
+import com.example.administrator.videoreader.ui.activity.SwipeBackActivity;
 import com.example.administrator.videoreader.widget.NavItem;
 import com.squareup.picasso.Picasso;
 
@@ -25,6 +24,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
  * 邮箱: 1004260403@qq.com
  *
  * 关于 Activity 界面
+ *
  */
 
 public class AboutActivity extends SwipeBackActivity implements AboutMeContract.View {

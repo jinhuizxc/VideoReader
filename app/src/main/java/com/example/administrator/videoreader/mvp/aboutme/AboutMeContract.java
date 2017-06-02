@@ -1,4 +1,4 @@
-package com.example.administrator.videoreader.view;
+package com.example.administrator.videoreader.mvp.aboutme;
 
 import com.example.administrator.videoreader.bean.UserInfo;
 

@@ -1,4 +1,4 @@
-package com.example.administrator.videoreader.presenter;
+package com.example.administrator.videoreader.mvp.movie.moviedetail;
 
 import com.example.administrator.videoreader.api.ApiManager;
 import com.example.administrator.videoreader.base.BasePresenter;
@@ -7,7 +7,7 @@ import com.example.administrator.videoreader.bean.movie.MovieResponse;
 import com.example.administrator.videoreader.config.Constants;
 import com.example.administrator.videoreader.rxbus.RxBus;
 import com.example.administrator.videoreader.rxbus.RxConstants;
-import com.example.administrator.videoreader.view.VideoInfoContract;
+import com.example.administrator.videoreader.mvp.movie.moviedetail.VideoInfoContract;
 
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -18,7 +18,7 @@ import io.reactivex.schedulers.Schedulers;
  * Created by jinhui on 2017/5/31.
  * 邮箱: 1004260403@qq.com
  *
- * 视频详情
+ * 视频详情页
  */
 
 public class VideoInfoFragPresenter extends BasePresenter implements VideoInfoContract.Presenter {

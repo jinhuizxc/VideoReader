@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/parentPanel"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -12,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/transparent_00ffffff"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY" />
 
     <TextView
         android:id="@+id/top_story_title"
@@ -25,5 +24,5 @@
         android:paddingRight="@dimen/recycler_header_indi_height"
         android:paddingTop="@dimen/margin_8dp"
         android:textColor="@color/white_FFFFFF"
-        android:textSize="@dimen/text_size_big"/>
+        android:textSize="@dimen/text_size_big" />
 </RelativeLayout>

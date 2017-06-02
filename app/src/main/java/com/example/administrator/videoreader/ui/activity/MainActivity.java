@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.example.administrator.videoreader.R;
+import com.example.administrator.videoreader.mvp.aboutme.AboutActivity;
 import com.example.administrator.videoreader.rxbus.RxBus;
 import com.example.administrator.videoreader.rxbus.RxConstants;
 import com.example.administrator.videoreader.base.BaseActivity;

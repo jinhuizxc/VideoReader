@@ -1,4 +1,4 @@
-package com.example.administrator.videoreader.ui.activity;
+package com.example.administrator.videoreader.mvp.zhihu.zhihudetail;
 
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -13,8 +13,7 @@ import android.widget.TextView;
 import com.example.administrator.videoreader.R;
 import com.example.administrator.videoreader.bean.ZhihuStoryContent;
 import com.example.administrator.videoreader.config.Constants;
-import com.example.administrator.videoreader.mvp.zhihu.zhihudetail.ZhiHuDetailContract;
-import com.example.administrator.videoreader.mvp.zhihu.zhihudetail.ZhihuStoryInfoPresenter;
+import com.example.administrator.videoreader.ui.activity.ShareActivity;
 import com.example.administrator.videoreader.utils.DensityUtil;
 import com.example.administrator.videoreader.utils.PicassoTarget;
 import com.example.administrator.videoreader.utils.x5webview.WebUtils;

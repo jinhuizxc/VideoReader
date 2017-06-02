@@ -1,4 +1,4 @@
-package com.example.administrator.videoreader.view;
+package com.example.administrator.videoreader.mvp.movie.moviedetail;
 
 import com.example.administrator.videoreader.bean.movie.MovieInfo;
 
